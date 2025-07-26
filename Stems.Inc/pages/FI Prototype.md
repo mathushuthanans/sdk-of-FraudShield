@@ -1,0 +1,66 @@
+- Captures in
+	- #feature An Adv -- Agents/Insures push their Contact & addr for service, ppl can reach easily completed.
+	- How you gonna implement in real life?
+	- Is that Webscrapping in ms?
+	- what is fixed deposit
+	-
+- Actions and Notes:
+	- *it's advisable to consult directly with the bank or ==refer to official government notifications.==*
+	- For government-backed savings schemes, interest rates are standardized and do not vary between banks.
+	- **Interest Rates:**
+		- The interest rates for these small savings schemes are determined by the government and are consistent across all authorized banks and post offices. For example, as of October 2024, the PPF offers an interest rate of 7.1% per annum, and the SSY offers 8.2% per annum. [CNBC TV18](https://www.cnbctv18.com/personal-finance/small-savings-schemes-interest-rates-revised-october-december-stable-ppf-scss-deposit-19485284.htm?utm_source=chatgpt.com)
+	-
+	-
+	- # Outline -- [[Mar 5th, 2025]]
+	- ### Pain Point: Time consuming Application process and  clueless on how to do.
+	- ### Aim: To Make a SIMPLE, Easy to Use, Complete Application
+	  
+	  (*result: the user satisfy with this application through making the applying process easier and faster with prior clue on what it is,  knowledge on how to approach with direction on required actions.*)
+	-
+	-
+	- page 01:  //*here we're taking the schemes first*
+		- categories for schemes, investments,
+		- banks (as categories) for loans
+		  
+		  -- search bar
+	-
+	- page 02: //*The Necessary Information for that scheme*
+		- ### **What You Need to Scrape?**
+			- **Scheme Name**
+			- **Eligibility Criteria**
+			- **Interest Rate** (fixed by govt.)
+			- **Participating Banks/Post Offices**
+			- **Terms summary**
+			- **Application Process (link - page 03 to open)**
+	-
+	- page 03: // *Approach on Application Process*
+		- Top : Summary on the Scheme
+		-
+		- Main part (left):
+			- general step-by-step approach and process details
+		-
+		- Right Part
+			- Where to Apply: Bank/Online/Post-office (*scrap or open to add by service provider in loans/Insurances)*
+				- Whom to approach
+				- Contact info
+			- Documents & Requirements
+				- Checklist + Cost/Charges
+			- Display the Time on process and Delays (for each process in guess)
+			- Terms/Penalties (summary) & Mistakes (how to avoid)
+		-
+	- (optional?) page 04: // *Educate*
+		- search and general
+		-
+		- specific
+			- page to fill the details for a person
+			- then available Schemes/loans/insurances
+-
+- Captures for future:
+	- Alternate process: Can the process be done **completely online**?
+	- appointment scheduling
+	- the heatmap on busy-ness
+	- location based process
+	-
+-
+-
+-

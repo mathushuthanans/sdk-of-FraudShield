@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SF-Pro-Display-Regular.woff2') format('woff2'),
+       url('./fonts/SF-Pro-Display-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+// 
+
+html, body {
+  font-family: 'SF Pro Display', Segoe UI, Roboto, sans-serif !important;
+}
+
+/* Use SF Mono for code blocks */
+code, pre, .prism-code, .CodeMirror, .cm-s-default {
+  font-family: 'SF Mono', ui-monospace, Menlo, Monaco, Consolas, monospace !important;
+}
+
+/* Sidebar in dark navy-blue */
+.left-sidebar-inner {
+  background-color: #151C22 !important;
+  color: #cdd6e0 !important;
+}
+
+/* Sidebar resizer */
+.left-sidebar-resizer {
+  background-color: #151C22 !important;
+}
+
+/* Sidebar scrollbar styling */
+.left-sidebar-inner::-webkit-scrollbar-thumb {
+  background-color: #334455;
+  border-radius: 4px;
+}
+
+/* Sidebar links style */
+.left-sidebar-inner a,
+.left-sidebar-inner .selected,
+.left-sidebar-inner .selected:hover {
+  background-color: transparent !important;
+  color: #cdd6e0 !important;
+  opacity: 1 !important;
+}
+
+.left-sidebar-inner a:hover {
+  background-color: #243447 !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* ----------------------------- */
+/* "+ Create" button (100% working) */
+/* ----------------------------- */
+.left-sidebar-inner button:has(> div > svg[aria-label="Create"]),
+.left-sidebar-inner button:has(> svg[aria-label="Create"]) {
+  background-color: #1e2a38 !important;
+  color: #cdd6e0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover state */
+.left-sidebar-inner button:has(> div > svg[aria-label="Create"]):hover,
+.left-sidebar-inner button:has(> svg[aria-label="Create"]):hover {
+  background-color: #243447 !important;
+  color: #ffffff !important;
+}

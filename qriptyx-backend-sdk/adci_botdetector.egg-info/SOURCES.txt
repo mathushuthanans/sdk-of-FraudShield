@@ -1,0 +1,8 @@
+setup.py
+adci_botdetector/__init__.py
+adci_botdetector/core.py
+adci_botdetector.egg-info/PKG-INFO
+adci_botdetector.egg-info/SOURCES.txt
+adci_botdetector.egg-info/dependency_links.txt
+adci_botdetector.egg-info/requires.txt
+adci_botdetector.egg-info/top_level.txt

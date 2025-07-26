@@ -1,0 +1,8 @@
+- Container Creation: `AnnotationConfigApplicationContext(file.class)`
+- Configuration File: Add the tag on Configuration class `@Configuration`
+- Object creation
+	- Created through defining the structure of the each object  as Methods with tag -> `@Bean`, and it is the name of the Bean
+	- the methods are imposing The state, creation & injection of the object and structure
+- [[Dependency Injection]] -  By setters and Constructions of the member in the class, helps to inject the objects from the container.
+- [[Scope]] - tags are in the **Config files.**
+	- `@Scope('prototype')`, `@Primary`,  `@Values`, `@Quantifiers`

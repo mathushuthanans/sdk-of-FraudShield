@@ -1,0 +1,2 @@
+- Recap what you know at this point?
+- Guess / skim & guess about the topic

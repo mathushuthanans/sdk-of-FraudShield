@@ -1,0 +1,34 @@
+- relevant links:
+	- [Vision based - Fastest way to ruin your life]({{video https://www.youtube.com/watch?v=Lt79hNo6SWE}})
+	- [Vision based - How you perceive yourself]({{video https://www.youtube.com/watch?v=_VLZ4b9LHLs}})
+	- [Vision Based - Outline to Solve real Problems]({{video https://www.youtube.com/watch?v=tkrlxYTRU_M}})
+	- [Vision Based - Solve and sell your problems]({{video https://www.youtube.com/watch?v=GmHQGVD7KRQ}})
+	- [Vision Based - Importance of Anti Vision in Vision]({{video https://www.youtube.com/watch?v=d5RKW3WSEb0&t=61s}})
+	- [Vision Based - Atomic Habits Improve your life]({{video https://www.youtube.com/watch?v=PZ7lDrwYdZc}})
+	- [Learning Based - Supposed to overwhelm]({{video https://www.youtube.com/watch?v=KrCzMfvSDv0}})
+	- [Learning Based - Fix your Focus]({{video https://www.youtube.com/watch?v=52nqjrCs57s}})
+	-
+- My captures:
+	- **Completing Goal & Mastery of Concepts.**
+		- Ask definite Problem to solve specifically.
+		- Assess Current Knowledge: Begin with a quick evaluation—maybe a quiz, a self-assessment, or a chat with an AI tutor.
+		- Tailor the Learning Path & help with resources and tasks.  (web strap) -- where Just-in-Time Learning-- Introduce concepts as they become relevant to the problem and users capabilities.
+		- Relevancy & Fill the Gaps: Bridge the gap between what you know and what you need by guiding you step-by-step through only the relevant concepts.
+	- **Where does the Accountability system fails? how can I improve it?**
+		- **Buddy System:** Pairing with your like-minded person to solve the problem.
+		- **Mentor Check-Ins:** Get feedback from an expert every milestone.
+		- **Public Commitment:** Share goals online for social accountability.
+		- **Gamified Rewards:** Earn points or badges for hitting targets.
+	- **Questions to be their for self-reflection:**
+		- Having personal Values and visions? Keep a journal to reflect it. (can I use a journal type, to interpret the task management effectively??)
+		- Importance of taking wrong decision leads to clarity.
+		- Commit to your vision and take sound Actions strongly. and work on relevant tasks.
+		-
+- The Market size of The Idea.
+	- The Demand and size. How unique the Domain is.
+	- Prototype to validate product to if people willing to pay you?
+	- **Create a Working Complete Model**
+	- Reach:
+		- Partner with key people -- free you in groups and done logic
+		- affiliating method - finder tool - apollo.io, ads
+		- educational content

@@ -1,0 +1,13 @@
+- In a Problem, makes the locally optimal choice at each step with the hope that these choices will lead to a globally optimal solution.
+	- **Characteristics**: Greedy algorithms are usually [[Iteration]] (using loops) rather than recursive because they focus on making a series of decisions in sequence.
+	- **The Way of Choices:** Maximum, averages, minimum
+- The Constraints to:
+	- The way of choices can be set by Sorting
+	- It can divided into sub problems.
+	- It has greedy choices with it.
+	- No [[Backtracking]] /invalid possibility created.
+	- Proof of correctness - handles all the cases.
+	-
+	-
+	-
+	![alt text](image.png)

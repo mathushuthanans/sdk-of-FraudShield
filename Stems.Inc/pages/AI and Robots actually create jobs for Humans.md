@@ -1,0 +1,4 @@
+- Reference : [How Think Tokyo Robot cafe is changing Lives]({{video https://youtu.be/-iLcOLvNfz0}})
+- For  ==disability persons as they can work well== in places like cafe, hotels control the robots from their homes.
+- The Japanese concept called **bunshin**.
+-

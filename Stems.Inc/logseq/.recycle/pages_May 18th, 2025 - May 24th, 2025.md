@@ -1,0 +1,3 @@
+- Concentrate on 3 things:
+	- Progression in the Data structure Stack.
+	- Working on a project: [Github - user activity fetching](https://roadmap.sh/projects/github-user-activity)

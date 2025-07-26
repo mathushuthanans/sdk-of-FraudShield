@@ -1,0 +1,291 @@
+- [[DATA]] - Variation
+  collapsed:: true
+	- Primitive values which cast to extend it's range & size
+	- Objects are created in Heap memory and variation through the definition of structure (State & behaviour of a Class)
+	- Static - Variable (common to all), methods (can use without init), block (execute only one and common to all)
+- Abstract and [[Interface]] - Generalizing the Class
+  collapsed:: true
+	- Can't create any instance, but created for one time execution through anonymous class.
+	- Types of Interface: Normal, Function (only one method), marker (no method & use to store in hard disks)
+	- The methods are public and the Variables are final and static
+- Exceptions
+  collapsed:: true
+	- runtime errors - Exceptions. Finally is used to close the resources or must need execution
+	- throw - new Exception thrown.
+- [[Threads]] - maintain the data integrity while sharing and accessing at the same time.
+  collapsed:: true
+	- Extends threads - Just use the `object.start()`
+	- Implement runnable (imp many things) - create object, pass the object to thread object, then `threadObject.start()`
+	- (2 or more) Threads Is Sharing same resources -`synchronized`  the method/block/using wait, notify, which locks and performs. `join()` is use to perform all the operations completed.
+- [[Collection API]]
+  id:: 67945f8b-a844-4278-b975-f0a71076b9aa
+  collapsed:: true
+	- List, Set, Map, Queue - Data structure that is build-in.
+	- Streams, The operation is performed for every elements by once on Collections.
+	- Lambda expressions and method references used.
+	- Parallel streams are threaded stream.
+- Maven - [[Jan 21st, 2025]]
+  collapsed:: true
+	- Standard file structures for collaboration
+	- all phases are maintain to work with single commands
+	- manual works on library are automated
+- Install Maven to VS Code
+  collapsed:: true
+	- Install the extensions
+	- mvn repo -> copy the dependency "GAV"
+	- Execution Path to set : `/home/mathushuthanans/Documents/DemoWorkout/sampleprojects/pom.xml` No this is not in the case create a new one.
+	- see if Maven central in the catalogue
+	- change the version of java to 23 in pom.xml file.
+- [[Java Database Connectivity]] - [[Jan 22nd, 2025]]
+  collapsed:: true
+	- Using PostgreSQL.
+	- [[PostgreSQL setup]] and procedures:
+	  collapsed:: true
+		- download the library driver and get it to [[external libraries]]
+		- for Maven, get to mvn repo. get the dependency link and paste & reload to pom.xml -- [[PostgreSQL with maven]]
+	- ==**Steps to Connect  Java and Database**== - [[Code for Connection b/w Java and Database and CRUD Operations]] & [[JDBC & SQL common Queries]]
+	  collapsed:: true
+		- import packages: `java.sql`;
+		- Load and register driver (optional)
+		- Create Connection between **Java and Database**
+		- Create and Execute Statement, process and close the connection.
+- Basic `sql` Queries
+  collapsed:: true
+	- ```
+	  SELECT "username", COUNT(*) AS "user_count"
+	  FROM "UserData"
+	  GROUP BY "username"
+	  HAVING COUNT(*) > 1
+	  ORDER BY "user_count" DESC;
+	  ```
+- [[Hibernate]] - [[Java Database Connectivity]] [[ORM]]
+  collapsed:: true
+	- Session is opened to save data through config the DB, opening the factory and begin the Transaction
+	- `hibernate.cfg.xml` Config file and definition
+	  collapsed:: true
+		- ```java
+		  <hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+		  <session-factory>
+		      <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		      <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/m2302</property>
+		      <property name="hibernate.connection.username">postgres</property>
+		      <property name="hibernate.connection.password">google.com12345</property>
+		  
+		      <property name="hibernate.hbm2ddl.auto">update</property>
+		  </session-factory>
+		  </hibernate-configuration>
+		  ```
+	- |Create|Read|Update |Delete|
+	  |--|--|--|--|
+	  |`persist()`|`get()`|`merge()`|`remove()`|
+- [[Spring]] and [[Spring Boot]] - [[Jan 23rd, 2025]] - Big enterprise application - POJO and is an ecosystem.
+  collapsed:: true
+	- **No manual wiring**, no memory mess, no lifecycle headaches.
+	- ==The Objects are created and managed by the framework== as Beans all at once and stored in a **IoC container**. Whenever you need the object, you just inject it from the container, *directly get the Bean (or) Autowired/linked.* This approach allows developers to focus on business logic and Aspect-Oriented Programming (AOP) technologies.
+	  collapsed:: true
+		- ![image.png](../assets/image_1737777981867_0.png)
+	- We write code on Spring Boot for Spring (Framework) .
+	  collapsed:: true
+		- ((6792f1ec-e83a-493a-b0e9-cb88df70e26c)) - [[Jan 24th, 2025]]
+- Object in Spring -  [[Annotations]] , [[xml config]] , [[Java-based Config]]
+  collapsed:: true
+	- The programmer does not directly create an object, *==but describes how it  should be created, by defining it in the Spring configuration file==*.
+	- The Steps for Object creation
+	  collapsed:: true
+		- Creating Containers to  hold the objects
+		- Define the Configuration File
+		- Config the Object
+		- Inject the Objects
+		- Define the Scope.
+- [[Scope]] &  [[Interface]]
+  collapsed:: true
+	- Singleton - *creates only one object, GLOBAL to the app & maintained*
+	- prototype - *everytime new object created whenever called*
+	- Lazy-init - *Created the object after it's first call in the container.*
+	- Primary bean - *primary bean for a Interface* and it is Default
+	- Qualifiers - Explicitly defining the Choice.
+- [[Dependency Injection]]
+  collapsed:: true
+	- inject values and object through xml file. config the properties and initial values.
+	- Setter injection - `<properties/>`:  for values and refs, inject through setters
+	- Constructor Injection - `<constructor-args/>`: for values and refs in sequences.
+- Spring JDBC - [[Java Database Connectivity]]
+  collapsed:: true
+	- Import the JBDC template from`org.springframework.jdbc.core.JdbcTemplate`
+	- Query and update(Query, Object[] args)
+	- [[Spring Boot]] Based
+	  collapsed:: true
+		- ```java
+		  spring.datasource.url=jdbc:postgresql://localhost:5432/telusko
+		  spring.datasource.username=postgres
+		  spring.datasource.password=Lumia@540
+		  spring.datasource.driver-class-name=org.postgresql.Driver
+		  
+		  ```
+	- [[Java-based Config]]
+	  collapsed:: true
+		- ```java
+		      // DataSource bean
+		      @Bean
+		      public DataSource dataSource() {
+		          DriverManagerDataSource dataSource = new DriverManagerDataSource();
+		          dataSource.setUrl("jdbc:postgresql://localhost/m2302");
+		          dataSource.setUsername("postgres");
+		          dataSource.setPassword("google.com12345");
+		          return dataSource;
+		      }
+		  
+		      @Bean
+		      public JdbcTemplate jdbcTemplate(){
+		          JdbcTemplate jdbcTemplate = new JdbcTemplate();
+		          jdbcTemplate.setDataSource(dataSource());
+		          return jdbcTemplate;
+		      }
+		  
+		      @Bean
+		      public JDBC jdbcClass(){
+		          JDBC jdbcClass = new JDBC();
+		          jdbcClass.setJdbc(jdbcTemplate());
+		          return jdbcClass;
+		      }
+		  ```
+- Spring Web and MVC - to build web applications - here is the basic hosting of server [[Basic hosting of a server]]
+  collapsed:: true
+	- request -> url --> Controller 
+	  
+	  ---> Request Param & Model Attribute/Object
+	  -- Process / Objects are injected --
+	  ---> Object to other URL
+	- Request is being sent to the server through the web browser. The Server which hosts the application, send them to it. The Controller/Front Controller which consist of `url tags` mapped with the corresponding pages and the Matched segment is being executed. (It Might be a Controller, Service, Repo, or views).
+	- ![image.png](../assets/image_1739555488702_0.png)
+	-
+	-
+	- ### Servelets
+		- Servlets are the class accept the request and do task return the response. Is the Component of the server.  the big picture of them are controller
+		- Question I asked: How can I run the backend Programs without a server or Virtual Machines/ Webservices? #card
+		  card-last-interval:: 28.3
+		  card-repeats:: 4
+		  card-ease-factor:: 2.66
+		  card-next-schedule:: 2025-05-16T00:29:41.636Z
+		  card-last-reviewed:: 2025-04-17T17:29:41.637Z
+		  card-last-score:: 5
+		  id:: 679f159d-83d9-4b42-86d6-8ba096272d3b
+		  collapsed:: true
+			- The Projects/application is run through creating packages of them into .war and using the embedded tomcat to run the project locally.
+		- 2 dependencies are needed `Jarakarta servlet` and `Tomcat embed core`
+	-
+	- ### Practice of Spring MVC and Spring Boot Web configs
+		- Spring boot takes over all the actions. The Configuration of Controller is required.
+		- `RequestParam` is used to handle difference in Parameter and the `url` idNames.
+		- Model - the way represent data (Organization and Logical Manipulation) and **pass data from the controller to the view**
+			- [[Fixing JSTL Not Working in Spring Boot 3+ (JSP Pages)]]
+			- Model in this context, to hold and share the data consistently across Multiple Pages.
+		- View - the front end data and format, presenting the data to the user.
+		- Control - Handles the process (Controller, Service and Repository) in terms of flow of the application, interacting with the Model and selecting the appropriate View.
+		- `@ModelAttribute` -  is used to *bind Form/`url` Data into Objects*. In the parameter, (it is optional while having same parameter name to mention) Convert the Values from the URL tag to an Object. And so the Method **Is to READ**
+		  collapsed:: true
+			- ```java
+			  @ModelAttribute
+			  public String course(){
+			    return "Java";
+			  }
+			  -------------------------------
+			  // in jsp
+			    <h1> Welcome to ${course}</h1>
+			  ```
+		- `modelandview` - to handle/set data and return the view page.
+	-
+	- ### Configs in Spring Web
+	  collapsed:: true
+		- *The Location to Scan and Way of the Configuration* is method in the`web.xml`, (Front Controller) and handles the rest of the Flow automatically.
+		- ```java
+		  // the web.xml
+		  
+		  <!DOCTYPE web-app PUBLIC
+		   "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+		   "http://java.sun.com/dtd/web-app_2_3.dtd" >
+		  
+		  <web-app>
+		    <display-name>Archetype Created Web Application</display-name>
+		    
+		    
+		    
+		   <servlet>
+		   <servlet-name>telusko</servlet-name>
+		   <servlet-class>
+		   org.springframework.web.servlet.DispatcherServlet
+		   </servlet-class>
+		   </servlet>
+		   
+		   <servlet-mapping>
+		    <servlet-name>telusko</servlet-name>
+		    <url-pattern>/</url-pattern>
+		   </servlet-mapping>
+		  </web-app>
+		  ```
+		- ```java
+		  <?xml version="1.0" encoding="UTF-8"?>
+		  <beans xmlns="http://www.springframework.org/schema/beans"
+		         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		         xmlns:ctx="http://www.springframework.org/schema/context"
+		         xmlns:p="http://www.springframework.org/schema/p"
+		         xmlns:mvc="http://www.springframework.org/schema/mvc"
+		         xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		                             http://www.springframework.org/schema/beans/spring-beans.xsd
+		                             http://www.springframework.org/schema/context 
+		                             http://www.springframework.org/schema/context/spring-context.xsd
+		                             http://www.springframework.org/schema/mvc
+		                             http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+		    
+		        <ctx:component-scan base-package="com.telusko" />
+		        <ctx:annotation-config/>
+		        
+		        <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		        <property name="prefix" value="/views/"></property>
+		        <property name="suffix" value=".jsp"></property>
+		        </bean>
+		    </beans>
+		  
+		    
+		  ```
+- REST API - The methods in the Controller are api. The style format to the right communication in web services. (*The Standard format represent the State and Transfer Mutually*)
+	- Methods
+		- |read|create|update|delete|
+		  |--|--|--|--|
+		  |`get`|`post`|`put`|`delete`|
+	-
+	- ### `@ResponseBody`
+		- Return the Object rather the Views (which is default of the controller)
+		- The `@RestController` is the Controller of all ResponseBody
+		-
+	- ### `@RequestBody`
+		- `@RequestBody` in the Parameter to indicate (to get the JSON format to Object)
+		- the `@pathVariable` is used to get the values.
+		-
+- Spring Data JPA - simplifies the Access of Data (Specification of Hibernate)
+	- Create a Interface which extends `JPARepository <EntityClass, PrimaryKey Type>`
+	- in the Properties use this: `spring.jpa.hibernate.ddl-auto=update` and `.show-sql=true`
+	-
+	- Procedure
+	  collapsed:: true
+		- Dependencies
+		- Interface, JPARepo
+		- Change the Methods to Save
+		- Entity and Id
+		- In Properties.
+	-
+	- Methods (w/ instant of the Interface)
+	  collapsed:: true
+		- save (create and update)
+		- findAll and findById (Read) and (dec of Variables + JPA Query, which is Class & variable than Table/Coln resp)
+		- delete
+		- findBy*Attribute*Containing()
+- Spring AOP -  Programs separates **non-object-specific concerns** (The point which multiple functionalities meet and put in a category).
+- JWT (JSON Web Token): A compact and self-contained way to securely transmit information between parties as a JSON object. Often used for authentication and authorization.
+- OAuth 2.0: An authorization framework that allows users to grant third-party applications limited access to their data on another website.
+- Docker
+- Cloud Deployment
+- Microservices
+- Git
+-
+-

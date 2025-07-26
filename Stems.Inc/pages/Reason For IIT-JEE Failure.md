@@ -1,0 +1,4 @@
+- I'm not definite Goal. neither having milestones nor consistent with it.
+- Not Prioritize the time for the Right Effortful Actions, Consistently.
+- Deep work - Longness of Concentration on One thing.
+-

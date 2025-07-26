@@ -1,0 +1,8 @@
+- Pick a topic and Practice on it.
+	- Conditioning, is essential if you can't find any ideas or thought flow.
+- Brainstorm your unique perspectives.
+	- Those are thoughts on: Problem, solution, Maps (or) road to achieve, experience and benefit so tell.
+- 500 - 1000 words/week
+- Deconstruct it and simplify it as posts
+- Learn how to be reached
+- Monetize your Direct Experience

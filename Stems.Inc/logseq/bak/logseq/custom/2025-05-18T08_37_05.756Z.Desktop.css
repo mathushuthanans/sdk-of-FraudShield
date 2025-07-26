@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Sidebar</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url('./fonts/SF-Pro-Display-Regular.woff2') format('woff2'),
+           url('./fonts/SF-Pro-Display-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    html, body {
+      font-family: 'SF Pro Display', Segoe UI, Roboto, sans-serif !important;
+    }
+
+    /* Use SF Mono for code blocks */
+    code, pre, .prism-code, .CodeMirror, .cm-s-default {
+      font-family: 'SF Mono', ui-monospace, Menlo, Monaco, Consolas, monospace !important;
+    }
+
+    /* Sidebar in dark navy-blue */
+    .left-sidebar-inner {
+      background-color: #151C22 !important;
+      color: #cdd6e0 !important;
+    }
+
+    /* Sidebar resizer */
+    .left-sidebar-resizer {
+      background-color: #151C22 !important;
+    }
+
+    /* Sidebar scrollbar styling */
+    .left-sidebar-inner::-webkit-scrollbar-thumb {
+      background-color: #334455;
+      border-radius: 4px;
+    }
+
+    /* Sidebar links style */
+    .left-sidebar-inner a,
+    .left-sidebar-inner .selected,
+    .left-sidebar-inner .selected:hover {
+      background-color: transparent !important;
+      color: #cdd6e0 !important;
+      opacity: 1 !important;
+    }
+
+    .left-sidebar-inner a:hover {
+      background-color: #243447 !important;
+      color: #ffffff !important;
+      opacity: 1 !important;
+    }
+
+    /* "+ Create" button styling using JS-injected class */
+    .create-button {
+      background-color: #1e2a38 !important;
+      color: #cdd6e0 !important;
+      border: none !important;
+      box-shadow: none !important;
+      font-weight: 500 !important;
+      opacity: 1 !important;
+      transition: background-color 0.2s ease;
+    }
+
+    .create-button:hover {
+      background-color: #243447 !important;
+      color: #ffffff !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left-sidebar-inner">
+    <button>
+      <svg aria-label="Create" width="16" height="16">
+        <!-- your icon -->
+        <circle cx="8" cy="8" r="7" stroke="white" fill="none"/>
+        <line x1="8" y1="4" x2="8" y2="12" stroke="white"/>
+        <line x1="4" y1="8" x2="12" y2="8" stroke="white"/>
+      </svg>
+      Create
+    </button>
+  </div>
+
+  <script>
+    // Add class to any button that contains a "Create" SVG
+    document.querySelectorAll('button').forEach(btn => {
+      if (btn.querySelector('svg[aria-label="Create"]')) {
+        btn.classList.add('create-button');
+      }
+    });
+  </script>
+</body>
+</html>

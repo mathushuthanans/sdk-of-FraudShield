@@ -1,0 +1,6 @@
+- Recursion that is a function that call itself again and again
+	- **Base Case:** Ensure there is a condition to stop recursion to avoid infinite loops.
+	- **Recursive Case:** Ensure each recursive call progresses towards the base case.
+	- [[Call Stack]]: a data structure that keeps track of function calls and their execution contexts, managing the order and state of each function. It stores function information, including local variables and return points, and handles the execution flow by pushing and popping stack frames.
+- Recursion, where the problem and the sub-problems having same methods to operate on, which delegates to the subproblems
+	-
