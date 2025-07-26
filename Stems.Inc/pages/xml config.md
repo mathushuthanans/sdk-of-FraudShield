@@ -1,7 +1,0 @@
-- Container Creation: `ClassPathXMLApplicationContext(file.xml)`.
-- Configuration file: Beans definition and Properties
-- Object creation
-	- Creating individual Bean, with attributes `id` and `name` of the class
-- [[Dependency Injection]] - through `Property` tag, set the `name` of the injection and `Ref` of the injection .
-- [[Scope]] - Tags are in the Config files as attributes.
--

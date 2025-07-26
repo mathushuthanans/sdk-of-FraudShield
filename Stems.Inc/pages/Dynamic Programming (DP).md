@@ -1,8 +1,0 @@
-- solve smaller subproblems and store their results (either in a table or cache) to use them later for solving larger subproblems. The output of each subproblem is crucial and reused to solve subsequent subproblems, building up to solve the entire problem efficiently.
-- ## Top-Down approach - Memoization: this is using [[Recursion]]
-	- Large Problem -> simple similar base problem -> reverse to solve the further sub problems with dependent on solved sub problems.
-	- It Stores every output in array/ hash map for avoiding redundant calculations.
-- ## Bottom-up approach - Tabulation: this is using [[Iteration]]
-	- Repetitively solve subproblems dependant by same operation.
-	- Store the every output in an array/ hash map.
--

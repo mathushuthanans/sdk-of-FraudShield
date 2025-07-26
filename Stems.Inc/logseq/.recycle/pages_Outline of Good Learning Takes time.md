@@ -1,2 +1,0 @@
-- What is the Question: Explaining how I'm approaching or Why people often fails?
--

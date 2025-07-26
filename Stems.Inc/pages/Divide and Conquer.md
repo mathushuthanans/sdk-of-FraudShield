@@ -1,2 +1,0 @@
-- In divide and conquer, you divide the problem into independent subproblems, solve them separately, and then combine their results.The solution to one subproblem does not depend on the solutions of other subproblems directly; they are combined at the end to get the final answer. -- using [[Recursion]]
--

@@ -1,2 +1,0 @@
-- Reference: [3 Things that make a Meaningful vision]({{video https://www.youtube.com/watch?v=zpzZumZCdWA}})
--

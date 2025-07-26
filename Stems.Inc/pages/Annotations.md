@@ -1,7 +1,0 @@
-- Container Creation : `AnnotationConfigApplicationContext(file.class)`
-- Add `@ComponentScan` with `@Configuration` in the created a Configuration class without any methods to config the objects.
-- Object Creation
-	- `@Component` and for diverse - `@Controller`, `@Service`, `@Respository`
-- [[Dependency Injection]] through tag - `@Autowired`
-- [[Scope]] - on very object using Component
-	- `@Scope('prototype')`, `@Primary`,  `@Values`, `@Quantifiers`

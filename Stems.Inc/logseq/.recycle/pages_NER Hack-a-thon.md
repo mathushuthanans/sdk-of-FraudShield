@@ -1,3 +1,0 @@
-- there is a hackathon which is holding these xontext, to identity and try to com up with the ideas, it should be no business and schemes do, and which prioritize the people and provide them a real value., what would it be
-- Themes:
-	- HEALTH CARE, IoT, husbandry,

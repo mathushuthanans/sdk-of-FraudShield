@@ -1,2 +1,0 @@
-- The same operation that has been performed on sequence of Inputs.
-- For nested loops, the which is set of subsets - the multiple operations that can  be done - on the single input from the sequence ---> leads to 2^n
